@@ -1,0 +1,234 @@
+@import url(http://allfont.ru/allfont.css?fonts=roboto-thin);
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/spinner.gif) no-repeat 50% 50%;
+    background-size: 10%; 
+    z-index: 5000;
+}
+body{
+	overflow:  hidden;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	font-size: 18px;
+}
+.play-er{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	padding-left: 20px;
+	padding-top: 20px
+}
+.player{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	background: rgba(148,0,211,0.4);
+	color: #fff;
+	outline : none;
+	z-index: 1000;
+}
+.fa-play, .fa-pause{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	top:2px;
+	right: 4px;
+	box-sizing: border-box;
+	color: rgba(255,255,255,0.7);
+	z-index: 1;
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 9px;
+	}
+	.fa-pause{
+		right: 6px;
+	}
+	.player i:hover{
+		color: rgba(25,255,25,0.8);
+	}
+#video-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    background: url(../img/fon.jpg) no-repeat #234563;
+    background-size: cover;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+ 
+#video-bg > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto; 
+}
+ 
+ @supports (object-fit: cover) {
+     #video-bg > video {
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+ }
+main{
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	position: relative;
+	display: flex!important; 
+	justify-content: center;
+	align-items: center;
+}
+.navbar{
+	width: 35%;
+	height: 40%;
+	margin-right: 1%;
+}
+a{
+	list-style-type: none;
+	text-decoration: none;
+	color: rgba(169,169,169,0.7);
+}
+a:hover{
+	color: #fff;
+}
+h2{
+	width: 100%;
+	height: 20%;
+	margin: 0px;
+	color: rgba(255,255,255,0.7);
+	font-family: 'Roboto Thin', arial;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 2px rgba(240,223,227,0.3);
+}
+.contact_us{
+	width: 20%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	display: flex!important;
+	justify-content: space-between;
+}
+ul{
+	width: 33%;
+	height: 100%;
+	list-style-type: none;
+	padding-left: 20px;
+}
+ul li{
+	padding-bottom: 20px;
+}
+.contact{
+	width: 80%;
+	height: 80%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgba(255,255,255,0.7);
+}
+p{
+	width: 100%;
+	margin: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.name,.email{
+	height: 15%;
+	width: 100%;
+	margin-top: 16px!important;
+	background: rgba(240,223,227,0.3);
+	border: 0px;
+	border-radius: 2px;
+	padding-left: 10px;
+	outline: none;
+	box-sizing: border-box;
+}
+.message{
+	margin-top: 16px;
+	padding-left: 10px;
+	padding-right: 20%;
+	padding-top: 10px;
+	width: 100%;
+	height: 60%;
+	border: 0px;
+	border-radius: 2px;
+	background: rgba(240,223,227,0.3);
+	resize: none;
+	outline: none;
+	box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+	color:rgba(240,223,227,0.8);
+}
+footer{
+	width: 100%;
+	height: 8%;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	color: rgba(240,223,227,0.3);
+	display: flex!important;
+	align-items: center;
+	text-align: center;
+}
+.contact{
+	position: relative;
+}
+button{
+	height: 30px;
+  width: 50px;
+	position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 10px solid transparent;
+  border-radius: 2px;
+  background: rgba(250,250,250,0.8);
+}
+.fa-check{
+	position: relative;
+	bottom: 5px;
+	width: 15px;
+	height: 25px;
+	color: rgba(240,22,2,0.8);
+	z-index: 3;
+}
