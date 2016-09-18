@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>GVitalii</title>
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="menu/css/main.css" />
-	<link rel="shortcut icon" href="menu/img/Internet.png">
+	<link rel="shortcut icon" href="menu/img/boom.jpg">
 	<link rel="stylesheet" href="1/css/normalize.css">
 	<link rel="stylesheet" href="menu/css/media.css">
 	<link rel="stylesheet" href="2/font/font-awesome-4.6.3/css/font-awesome.min.css">
@@ -22,7 +22,7 @@
 <!-- _________________________________background video___________________________________________ -->
 <div id="video-bg">
     <video preload="auto" autoplay="autoplay"
-    loop="loop" poster="bg/fon.jpg">
+    loop="loop" poster="menu/img/fon.jpg">
         <source src="menu/bgvideo/DarkDream - FREE Video Background Loop HD 1080p.mp4">
     </video>
 </div>
@@ -34,7 +34,7 @@
 				<ul class="col_1">
 					<li><a href="1/index.html">Site &#8544;</a></li>
 					<li><a href="2/index.html">Site &#8545;</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
+					<li><a href="хроники хаоса/index.html">Сhaos Сhronicles</a></li>
 					<li><a href="#">Lorem ipsum.</a></li>
 					<li><a href="#">Lorem ipsum.</a></li>
 				</ul>
@@ -43,24 +43,24 @@
 					<li><a href="#">Lorem ipsum.</a></li>
 					<li><a href="#">Lorem ipsum.</a></li>
 					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
+					<li><a href="muzvideo/index.html">Music 3D</a></li>
 				</ul>
 				<ul class="col_3">
 					<li><a href="#">Lorem ipsum.</a></li>
 					<li><a href="#">Lorem ipsum.</a></li>
 					<li><a href="#">Lorem ipsum.</a></li>
 					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="muzvideo/index.html">Music 3D</a></li>
+					<li><a href="#">Lorem ipsum.</a></li>
 				</ul>
 			</nav>
 		</div>	
 		<div class="contact_us">
 			<h2>Contact Us</h2>
 			<form action="#" class="contact">
-				<input type="text"	name="name" class="name" placeholder="Name:"/>
-				<input type="text"	name="email" class="email" placeholder="Subject"/>
+				<input type="text"	name="name" class="name" placeholder="Name:" required="required"/>
+				<input type="text"	name="Subject" class="email" placeholder="Subject" required="required"/>
 				<textarea name="message" class="message" placeholder="Message"></textarea>
-				<button><i class="fa fa-check" aria-hidden="true"></i></button>
+				<button><i name="submit" class="fa fa-check" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</main>
@@ -70,5 +70,21 @@
 	<script src="1/js/jquery-3.0.0.min.js"></script>
 	<script src="1/js/jquery-migrate-3.0.0.min.js"></script>
 	<script src="menu/js/js.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            });
+    });
+});    
+</script>
+</script>
 </body>
 </html>
