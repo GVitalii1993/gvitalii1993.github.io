@@ -1,0 +1,248 @@
+body{
+	height: 100vh;
+}
+.left_img{
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+.left_img img{
+	height: 100vh;
+	float: left;
+	margin-left: -5%;
+}
+.left_img img:last-child{
+	height: 100vh;
+	z-index: -1;
+	float: right;
+	margin-right: -4%;
+	transform: scale(-1, 1);
+}
+header{
+	height: 20vh;
+}
+.top_logo{
+	height: 8vh;
+	display: flex!important;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/gridirnt.jpg) no-repeat;
+	background-size: 100% 100%;
+	z-index: 500!important;
+}
+.top_logo a{
+	display: flex!important;
+	align-items: center;
+	width: 20%;
+	height: 80px
+}
+.top_logo a img{
+	width: 200px;
+}
+.container{
+	background: #fff;
+	height: 100vh;
+}
+.top-menu{
+	height: 12vh;
+	background: #fff;
+}
+.clan{
+	width: 20%;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background: #000;
+	margin: 0px;
+	padding: 0px;
+	z-index: 1;
+}
+.clan:before {
+	content: '';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-bottom: 12.05vh solid #ff7200;
+  border-left: 100px solid #000;
+  z-index: 1;
+}
+.clan img{
+	padding-left: 30px;
+}
+.name-clan{
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	margin: 0px;
+	padding:0px;
+	background: #ff7200;
+	z-index: 3;
+	position: relative;
+}
+.name-clan h1{
+	padding: 0px;
+	margin: 0px;
+	z-index: 50;
+}
+.line{
+	width: 108%;
+	position: absolute!important;
+	bottom: 0px;
+	left: -8%;
+	height: 5px;
+	background: #000;
+	z-index: 50;
+}
+.menu ul{
+	width: 75%;
+	height: 7vh;
+	float: left;
+	padding: 0px!important;
+	margin: 0px;
+	background: #ff7200;
+	overflow: hidden;
+}
+.menu ul li a{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 20px!important;
+	position: relative;
+	color: #fff;
+	z-index: 999;
+}
+.menu ul li a:hover{
+	color: #ff7200;
+}
+.menu ul li a::before{
+	content: '';
+  position: absolute;
+  width: 260%;
+  height: 156px;
+  right: -85%;
+  margin-left: 50px;
+  top: -50px;
+  transform: rotate(-57deg);
+  background: rgba(0,0,0,0.9);
+  opacity: 0;
+  z-index: -1;
+}
+.firsti::before{
+	height: 260%!important;
+	right: -68%!important;
+	z-index: -1;
+}
+.last::before{
+	height: 255%!important;
+	left: -111%;
+	z-index: -1!;
+}
+.menu ul li a:hover:before{
+	opacity: 1;
+}
+ul li:hover{
+color: #ff7200;
+}
+ul{
+	margin: 0px;
+	padding: 0px; 
+	height: 80px;
+	width: 100%;
+}
+ul li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	list-style: none;
+	color: #fff;
+	box-sizing: border-box;
+}
+a{
+	font-size: 20px;
+	list-style-type: none!important;
+	text-decoration: none!important;
+}
+h1{
+	font-size: 60px;
+	margin: 0px;
+	color: #fff;
+}
+.info-clan{
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: url(../img/clan-info.png) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+}
+.content{
+	height:70vh;
+	background: url(../img/container.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: auto;
+	padding: 40px;
+	padding-top: 20px;
+	color: #fff;
+}
+footer{
+	display: flex!important;
+	justify-content: center;
+	align-items: center;
+	height: 5vh;
+	background: rgba(0,0,0,1);
+}
+footer p{
+	margin: 0px;
+	padding: 0px;
+	color: rgba(255,255,255,0.6);
+}
+.cat{
+	width: 80px;
+	height: 100px;
+	background: url(../../menu/img/cat.png) 0px 5px no-repeat;
+	background-size:  100% auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+}
+.cat_back{
+	position: fixed;
+	width: 80px;
+	height: 100px;
+	bottom: 0;
+	left: 0;
+	color: rgba(255,255,255,0.8);
+	z-index: 6000;
+	display: flex!important;
+	justify-content: center;
+	align-items: flex-end;
+	box-sizing: border-box;
+	padding-bottom: 5px;
+	font-size: 15px;
+}
+.cat_back i{
+	z-index: 7!important;
+	padding-right: 5px!important;
+}
+.catback{
+	width: 80px;
+	height: 28px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: rgba(0,0,0,0.8);	
+	text-align: center;
+	z-index: 4;
+	border-top-right-radius: 4px;
+}
+.cat_back:hover{
+	color: rgba(25,255,25,0.8);
+}
