@@ -1,5 +1,6 @@
 body{
 	height: 100vh;
+	font-family: 'Poppins', sans-serif!important;
 }
 .left_img{
 	width: 100%;
@@ -102,6 +103,7 @@ header{
 	margin: 0px;
 	background: #ff7200;
 	overflow: hidden;
+	font-weight: bold;
 }
 .menu ul li a{
 	height: 100%;
@@ -179,8 +181,12 @@ h1{
 	padding-right: 5%;
 	background: url(../img/clan-info.png) no-repeat;
 	background-size: 100% 100%;
-	color: #ffe6b4;
-	font-weight: bold;
+}
+.info-clan ul{
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .content{
 	height:70vh;
@@ -196,9 +202,11 @@ h1{
 
 
 
-.content p, h3{
+p, h3, li, a{
 	margin: 0px!important;
 	padding: 0px!important;
+	color: #ffe6b4;
+	font-weight: bold;
 }
 .content p{
 	color: #ffe6b4;
@@ -267,10 +275,6 @@ h1{
 .data-rang-1 button:hover{
 	box-shadow: 0px 0px 15px 1px #ff7200 inset;
 }
-.points-1{
-	height: 8vh;
-	width: 18%;
-}
 .date-1{
 	width: 62%;
 	display: flex;
@@ -285,6 +289,10 @@ h1{
 .date-1 i:hover{
 	color: #01FDFE;
 	z-index: 5;
+}
+.points-1{
+	height: 8vh;
+	width: 18%;
 }
 .points-1{
 	display: flex;
