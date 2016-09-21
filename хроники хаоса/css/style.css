@@ -188,6 +188,9 @@ h1{
 	align-items: center;
 	justify-content: space-between;
 }
+.info-clan ul li{
+	width: 18%;
+}
 .content{
 	height:70vh;
 	background: url(../img/scrol.png) repeat-y #180C06;
