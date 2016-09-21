@@ -179,17 +179,122 @@ h1{
 	padding-right: 5%;
 	background: url(../img/clan-info.png) no-repeat;
 	background-size: 100% 100%;
-	color: #fff;
+	color: #ffe6b4;
+	font-weight: bold;
 }
 .content{
 	height:70vh;
-	background: url(../img/container.png) no-repeat;
-	background-size: 100% 100%;
+	background: url(../img/scrol.png) repeat-y #180C06;
+	background-position: right;
 	overflow: auto;
 	padding: 40px;
 	padding-top: 20px;
 	color: #fff;
+	text-shadow: 2px 2px 1px black;
 }
+/*-------------------------------Блок игроков----------------------*/
+
+
+
+.content p, h3{
+	margin: 0px!important;
+	padding: 0px!important;
+}
+.content p{
+	color: #ffe6b4;
+	font-weight: bold;
+}
+.plaer-1{
+	background: url(../img/contentgridient.png) no-repeat;
+	background-size: 100% 100%;
+	border: 2px #4e3a0d solid;
+	border-radius: 10px;
+	height: 10vh;
+	display: flex!important;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.avatar-1{
+	height: 8vh;
+	width: 8vh;
+	background: url(../img/chabba.png)no-repeat;
+	background-size: 100% 100%;
+	border: 3px solid #fbde91;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 5px #000000 inset;
+	z-index: 1;
+	float: left;
+	position: relative;
+}
+.avatar-name-1{
+	width: 25%;
+	height: 8vh;
+	display: flex;
+}
+.name-1{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: center;
+	margin-left: 10px;
+}
+.name-1 h3{
+	font-weight: bold;
+	color: #f4ff34;
+}
+.data-rang-1{
+	width: 20%;
+	height: 8vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+.data-rang-1 button{
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	top:30%;
+	right: 20px;
+	background: url(../img/button.png) no-repeat;
+	background-size: 100% 100%;
+	border: 0px;
+	border-radius: 50px;
+	outline:none;
+}
+.data-rang-1 button:hover{
+	box-shadow: 0px 0px 15px 1px #ff7200 inset;
+}
+.points-1{
+	height: 8vh;
+	width: 18%;
+}
+.date-1{
+	width: 62%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fa-vk{
+	font-size: 25px;
+	color: #0765A5;
+	z-index: -1;
+}
+.date-1 i:hover{
+	color: #01FDFE;
+	z-index: 5;
+}
+.points-1{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.points-1 img{
+	margin-left: 10px;
+}
+
 footer{
 	display: flex!important;
 	justify-content: center;
@@ -245,4 +350,36 @@ footer p{
 }
 .cat_back:hover{
 	color: rgba(25,255,25,0.8);
+}
+::-webkit-scrollbar-button { 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:6px; 
+height:0px 
+} 
+
+::-webkit-scrollbar-track { 
+background-color:rgba(0,0,0,0.01); 
+} 
+
+::-webkit-scrollbar-thumb { 
+-webkit-border-radius: 5px; 
+border-radius: 5px; 
+-webkit-border-height: 20p;
+background-color:#ffcb17; 
+box-shadow:0px 1px 1px #fff; 
+background-image:url('http://yraaa.ru/_pu/24/59610063.png'); 
+background-position:center; 
+background-repeat:no-repeat; 
+} 
+
+::-webkit-resizer{ 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:7px; 
+height:10px 
+} 
+
+::-webkit-scrollbar{ 
+width: 10px; 
 }
