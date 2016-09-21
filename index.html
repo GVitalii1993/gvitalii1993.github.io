@@ -1,90 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="menu/css/main.css" />
-	<link rel="shortcut icon" href="menu/img/internet.png">
-	<link rel="stylesheet" href="1/css/normalize.css">
-	<link rel="stylesheet" href="menu/css/media.css">
-	<link rel="stylesheet" href="2/font/font-awesome-4.6.3/css/font-awesome.min.css">
+	<title>Сhaos Сhronicles</title>
+	<link rel="shortcut icon" href="img/clan.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="font/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="../2/font/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-<div id="page-preloader"><span class="spinner"></span></div>
-<!-- _________________________________Audio___________________________________________ -->
-	<audio id="player" src="menu/muz/tobu-colors_fmusic_mobi.mp3"></audio>
-<div class="play-er">
-	<button class="player play" onclick="document.getElementById('player').play()"><i class="fa fa-play" aria-hidden="true"></i></button>
-	<button class="player pause" onclick="document.getElementById('player').pause()"><i class="fa fa-pause" aria-hidden="true"></i></button>
-<!-- _________________________________/Audio___________________________________________ -->
-</div>
-<!-- _________________________________background video___________________________________________ -->
-<div id="video-bg">
-    <video preload="auto" autoplay="autoplay"
-    loop="loop" poster="menu/img/fon.jpg">
-        <source src="menu/bgvideo/DarkDream - FREE Video Background Loop HD 1080p.mp4">
-    </video>
-</div>
-<!-- ________________________________/background video___________________________________________ -->
-	<main>
-		<div class="navbar">
-			<h2>My Works</h2>
-			<nav>
-				<ul class="col_1">
-					<li><a href="1/index.html">Site &#8544;</a></li>
-					<li><a href="2/index.html">Site &#8545;</a></li>
-					<li><a href="хроники хаоса/index.html">Сhaos Сhronicles</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-				</ul>
-				<ul class="col_2">
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="muzvideo/index.html">Music 3D</a></li>
-				</ul>
-				<ul class="col_3">
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-				</ul>
-			</nav>
-		</div>	
-		<div class="contact_us">
-			<h2>Contact Us</h2>
-			<form action="#" class="contact">
-				<input type="text"	name="name" class="name" placeholder="Name:" required="required"/>
-				<input type="text"	name="Subject" class="email" placeholder="Subject" required="required"/>
-				<textarea name="message" class="message" placeholder="Message"></textarea>
-				<button><i name="submit" class="fa fa-check" aria-hidden="true"></i></button>
-			</form>
+<figure class="left_img">
+	<img src="img/artemis.jpg" alt="">
+	<img src="img/star.jpg" alt="">
+</figure>
+	<div class="container">
+<header>
+	<div class="row top_logo" >
+		<a href=""><img src="img/wordmark.png" alt="#"></a>
+	</div>
+	<div class="row top-menu">
+		<div class="clan col-md-3"><a href="#"><img src="img/clan.png" alt=""></a></div>
+		<div class="name-clan col-md-9">
+			<h1>Герои Хаоса</h1>
+			<div class="line"></div>
 		</div>
-	</main>
-	<footer>
-		<p>2016&#169; gvitalii1993.github.io</p>
-	</footer>
-	<script src="1/js/jquery-3.0.0.min.js"></script>
-	<script src="1/js/jquery-migrate-3.0.0.min.js"></script>
-	<script src="menu/js/js.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
-            var form_data = $(this).serialize(); //собераем все данные из формы
-            $.ajax({
-            type: "POST", //Метод отправки
-            url: "send.php", //путь до php фаила отправителя
-            data: form_data,
-            success: function() {
-                   //код в этом блоке выполняется при успешной отправке сообщения
-                   alert("Ваше сообщение отпрвлено!");
-            });
-    });
-});    
-</script>
-</script>
+		<div class="menu ">
+			<ul>
+				<li class="col-md-3"><a href="#" class="firsti">Добавить</a></li>
+				<li class="col-md-3"><a href="#">По имени</a></li>
+				<li class="col-md-3"><a href="#">По дате</a></li>
+				<li class="col-md-3"><a href="#" class="last">По очкам</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="row info-clan">
+	<span>
+		<p>Участники:(JS)</p>
+	</span>
+	<span>
+		<p>Позиция</p>
+	</span>
+	<span>
+		<p>Активность С&#160;/&#160;Н</p>
+	</span>
+</div>
+<div class="content row">
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гильдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+	<div class="plaer-1 col-md-12">
+		<div class="avatar-name-1">
+			<div class="avatar-1"></div>
+			<div class="name-1">
+			<h3>WaPaW</h3>
+			<p>Уровень 80</p>
+			</div>
+		</div>
+		<div class="data-rang-1">
+			<p>Мастер Гиьдии</p>
+			<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>
+			<button></button>
+		</div>
+		<div class="points-1">
+			<p>1000</p><p>&#160;/&#160;</p><p>7000</p>
+			<img src="img/pointi-con.png" alt="#">
+		</div>
+	</div>
+</div>
+<footer class="row">
+	<p>©2016 Сhaos Сhronicles</p>
+</footer>
+</div>
+<a href="../index.html" class="cat_back">
+		<i class="fa fa-chevron-left" aria-hidden="true"></i>
+		<i>back</i>
+		<div class="cat">
+			<div class="catback">
+			</div>
+		</div>
+	</a>
+<!-- <figure class="right_img">
+	<img src="img/star.jpg" alt="">
+</figure>
+ --><script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
