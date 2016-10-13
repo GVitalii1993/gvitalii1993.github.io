@@ -77,6 +77,14 @@
 .data-rang-1 button{
 	right: 0%;
 }
+.cat{
+	display: none;
+}
+.cat_back{
+	height: 4vh;
+	display: flex;
+	align-items: center;
+}
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -95,6 +103,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 .clan a img{
+	width: 80%;
 	padding-left: 10px;
 	z-index: 1000;
 }
@@ -128,9 +137,9 @@ font-size: 1.4em;
 }
 @media only screen and (max-width : 660px) {
 .clan a img{
-	width: 100%;
-	padding-left: 25%;
-	z-index: 1000;
+	width: 80%;
+	padding-left: 10%;
+	z-index: 100;
 }
 .clan:before {
   border-left: 40px solid #000;
@@ -160,13 +169,14 @@ font-size: 1.4em;
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 520px) {
 .top_logo a img{
 	width: 20vh;
 }	
 .clan a img{
-	width: 70%;
-	padding-left: 10%;
+	width: 80%;
+	padding-left: 0%;
+	z-index: 100;
 }
 .name-clan h1 {
     font-size: 1.2em;
@@ -220,12 +230,6 @@ font-size: 1.4em;
 	width: 14px;
 	height: 14px;
 	top: 40%;
-}
-.cat{
-	display: none;
-}
-.fa-chevron-left{
-	margin-bottom: 4px;
 }
 }
 /* Extra Small Devices, Phones */

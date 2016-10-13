@@ -71,7 +71,8 @@ header{
   z-index: -1;
 }
 .clan img{
-	padding-left: 30px;
+	width: 85%;
+	padding-left: 25%;
 }
 .name-clan{
 	height: 5vh;
