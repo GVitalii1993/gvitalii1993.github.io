@@ -158,7 +158,18 @@ font-size: 1.4em;
 	font-size: 0.85em!important; 
 }
 }
-@media only screen and (max-width : 520px) {
+/* Extra Small Devices, Phones */
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 620px) {
 .top_logo a img{
 	width: 20vh;
 }	
@@ -220,4 +231,23 @@ font-size: 1.4em;
 	height: 14px;
 	top: 40%;
 }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
