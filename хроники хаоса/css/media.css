@@ -56,6 +56,9 @@
 .container {
 	width: 100%;
 }
+.clan a img{
+	width: 85%;
+}
 .menu ul li a::before{
   height: 300%;
 }
@@ -103,7 +106,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 .clan a img{
-	width: 80%;
+	width: 85%;
 	padding-left: 10px;
 	z-index: 1000;
 }
@@ -174,8 +177,8 @@ font-size: 1.4em;
 	width: 20vh;
 }	
 .clan a img{
-	width: 80%;
-	padding-left: 0%;
+	width: 70%;
+	padding-left: 10%;
 	z-index: 100;
 }
 .name-clan h1 {
@@ -231,6 +234,60 @@ font-size: 1.4em;
 	height: 14px;
 	top: 40%;
 }
+}
+@media only screen and (max-width : 420px) {
+.clan a img{
+	width: 85%;
+	padding-left: 0px;
+}
+.clan:before {
+  border-left: 20px solid #000;
+}
+.menu ul li a::before{
+  width: 100%;
+  right: 0px!important;
+  margin-left: 0px;
+  transform: rotate(-0deg);
+}
+.firsti::before{
+	right: 0%!important;
+}
+.last::before{
+	left: 0%;
+}
+.info-clan{
+
+}
+.avatar-name-1{
+	width: 40%;
+}
+.data-rang-1{
+	height: 100%;
+}
+.date-1{
+	height: 10px;
+}
+.data-rang-1 button{
+	position: relative;
+	width: 15px;
+  height: 15px;
+  top: 5%;
+  right: 0%
+}
+
+.points-1{
+	margin-right: -5px;
+}
+.points-1 p{
+	font-size: 0.75em!important;
+}
+.points-1 img {
+	width: 15px;
+  margin-left: 5px;
+}
+
+
+
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {

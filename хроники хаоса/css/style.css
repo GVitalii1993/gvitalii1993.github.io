@@ -293,6 +293,9 @@ p, h3, li, a{
 	justify-content: center;
 	align-items: center;
 }
+.date-1 a{
+	margin-bottom: 3px!important;
+}
 .date-1 p{
 	padding-left: 20px!important;
 }
