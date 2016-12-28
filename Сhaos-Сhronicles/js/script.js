@@ -18,7 +18,7 @@ function popupclose(){
 							"</div>" +
 						'<div class="data-rang-1">' +
 							"<p>Хранитель</p>" +
-							'<div class="date-1"><a href="https:vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>' +
+							'<div class="date-1"><a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a><p>21.09.2016</p></div>' +
 							"<button></button>" +
 						'</div>' +
 						'<div class="points-1">' +
