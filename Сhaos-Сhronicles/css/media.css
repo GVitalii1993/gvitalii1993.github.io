@@ -1,0 +1,310 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+.container{
+	width: 60%;
+	}
+.firsti::before{
+	height: 300%!important;
+	right: -90%!important;
+	top: -100px!important;
+}
+.last::before{
+	height: 295%!important;
+	left: -125%;
+}
+}
+@media only screen and (max-width : 1500px) {
+.container{
+	width: 70%;
+}
+}
+@media only screen and (max-width : 1369px) {
+.container{
+	width: 65%;
+}
+.menu ul li a::before{
+  height: 260%;
+}
+.firsti::before{
+	right: -75%!important;
+}
+.last::before{
+	left: -115%;
+}
+.clan a img{
+	z-index: 9999!important;
+}
+}
+@media only screen and (max-width : 1280px) {
+.menu ul li a::before{
+  height: 240%;
+  right: -95%;
+}
+.firsti::before{
+	height: 310%!important;
+	right: -95%!important;
+	top: -100px!important;
+}
+.last::before{
+	height: 300%!important;
+	left: -120%;
+}
+}
+@media only screen and (max-width : 1170px) {
+.container {
+	width: 100%;
+}
+.clan a img{
+	width: 85%;
+}
+.menu ul li a::before{
+  height: 300%;
+}
+.firsti::before{
+	height: 390%!important;
+	right: -90%!important;
+	top: -100px!important;
+}
+.last::before{
+	height: 390%!important;
+	left: -115%;
+}
+.left_img img:last-chil{
+	display: none;
+}
+.left_img img{
+	display: none;
+}
+.data-rang-1 button{
+	right: 0%;
+}
+.cat{
+	display: none;
+}
+.cat_back{
+	height: 4vh;
+	display: flex;
+	align-items: center;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.col-md-9 {
+    width: 75%;
+    float: right;
+}
+.col-md-3 {
+    width: 25%;
+    float: left;
+}
+.date-1 p{
+	padding-left: 10px!important;
+}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.clan a img{
+	width: 85%;
+	padding-left: 10px;
+	z-index: 1000;
+}
+.info-clan ul li {
+    width: 30%;
+}
+.name-clan h1{
+font-size: 1.4em;
+}
+.menu ul li a{
+	text-align: center!important;
+	width: 100%;
+	font-size: 1em;
+	padding: 0px!important;
+}
+.info-clan ul li p{
+	font-size: 0.85em!important;
+}
+.menu ul li a::before{
+  height: 195%;
+  right: -98%;
+}
+.firsti::before{
+	height: 260%!important;
+	right: -95%!important;
+}
+.last::before{
+	height: 250%!important;
+	left: -110%;
+}
+}
+@media only screen and (max-width : 660px) {
+.clan a img{
+	width: 80%;
+	padding-left: 10%;
+	z-index: 100;
+}
+.clan:before {
+  border-left: 40px solid #000;
+}
+.menu ul li a::before{
+  height: 160%;
+  right: -105%;
+}
+.firsti::before{
+	right: -85%!important;
+}
+.last::before{
+	left: -105%;
+}
+.content p{
+	font-size: 0.85em!important; 
+}
+}
+/* Extra Small Devices, Phones */
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 620px) {
+.top_logo a img{
+	width: 20vh;
+}	
+.clan a img{
+	width: 70%;
+	padding-left: 10%;
+	z-index: 100;
+}
+.name-clan h1 {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+.menu ul li a{
+	font-size: 0.8em;
+}
+.info-clan{
+	font-size: 0.8em;
+}
+.menu ul li a::before{
+  height: 134%;
+  right: -90%;
+  top: -20%;
+}
+.firsti::before{
+	right: -30%!important;
+	top: -45%!important;
+}
+.last::before{
+	left: -125%;
+}
+.content{
+	padding: 10px;
+}
+.plaer-1{
+	font-size: 0.8em;
+	height: 60px;
+	border: 2px #4e3a0d solid;
+	border-radius: 5px;
+}
+.avatar-1{
+	height: 45px;
+	width: 45px;
+	top: 17px;
+	left: -5px;
+	border: 2px solid #fbde91;
+	border-radius: 3px;
+}
+.name-1{
+	margin: 0px;
+}
+.fa-vk{
+	font-size: 0.7em;
+}
+.date-1 p{
+	padding-left: 5px!important;
+}
+.data-rang-1 button{
+	width: 14px;
+	height: 14px;
+	top: 40%;
+}
+}
+@media only screen and (max-width : 420px) {
+.clan a img{
+	width: 85%;
+	padding-left: 0px;
+}
+.clan:before {
+  border-left: 20px solid #000;
+}
+.menu ul li a::before{
+  width: 100%;
+  right: 0px!important;
+  margin-left: 0px;
+  transform: rotate(-0deg);
+}
+.firsti::before{
+	right: 0%!important;
+}
+.last::before{
+	left: 0%;
+}
+.info-clan{
+
+}
+.avatar-name-1{
+	width: 40%;
+}
+.data-rang-1{
+	height: 100%;
+}
+.date-1{
+	height: 10px;
+}
+.data-rang-1 button{
+	position: relative;
+	width: 15px;
+  height: 15px;
+  top: 5%;
+  right: 0%
+}
+
+.points-1{
+	margin-right: -5px;
+}
+.points-1 p{
+	font-size: 0.75em!important;
+}
+.points-1 img {
+	width: 15px;
+  margin-left: 5px;
+}
+
+
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
