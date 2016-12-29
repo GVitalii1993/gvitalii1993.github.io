@@ -7,7 +7,7 @@ function popupclose(){
 		var popUp =  document.querySelector(".popUp");
 		popUp.style.display = "none";
         
-        var content = document.getElementById("content");
+        var container = document.getElementById("content");
         // var newDiv = document.createElement('div');
         var inputName = document.getElementById("InputNamePlaer").value;
         var InputVkPlaer = document.getElementById("InputVkPlaer").value;
@@ -18,26 +18,19 @@ function popupclose(){
 		var d = date.getDate();
 		var resultDate = d+"."+(m+1)+"."+y;
 
-		var InputLvlPlaer = document.getElementById("InputLvlPlaer").value;
-
-
-		var selected = document.getElementById("mySelect");
-		var selectedindex = selected.selectedIndex;
-		var selectedWhere = selected.options[selectedindex].innerHTML;
-
 		var Html = 	'<div id="plaer-1" class="col-md-12">' +
 						'<div class="avatar-name-1">' +
 							'<div class="avatar-1"></div>' +
 								'<div class="name-1">' +
-									"<h3>"+inputName+"</h3>" +
-									"<p>Уровень "+InputLvlPlaer+"</p>" +
+									"<h3>"+ inputName +"</h3>" +
+									"<p>Уровень 80</p>" +
 								"</div>" +
 							'</div>' +
 						'<div class="data-rang-1">' +
-							"<p>"+selectedWhere+"</p>" +
+							"<p>Хранитель</p>" +
 							'<div class="date-1">' +
-								'<a href="'+InputVkPlaer+'" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>' +
-								'<p>'+resultDate+'</p>' +
+								'<a href="https://vk.com/id228642634" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>' +
+								'<p>'+ resultDate +'</p>' +
 							'</div>' +							
 							'<button></button>' +
 						'</div>' +
@@ -48,6 +41,6 @@ function popupclose(){
 					'</div>';
 
         // newDiv.id = 'plaer-1';
-        content.insertAdjacentHTML("beforeend", Html);
+        container.insertAdjacentHTML("beforeend", Html);
         // container.appendChild(newDiv);
 };
