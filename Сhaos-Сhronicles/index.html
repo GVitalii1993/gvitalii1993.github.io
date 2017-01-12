@@ -32,7 +32,7 @@
 		</div>
 		<div class="menu ">
 			<ul>
-				<li class="col-md-3"><a href="#" class="firsti" onclick="popup()">Добавить</a></li>
+				<li class="col-md-3"><a href="#" id="add_plaer" class="firsti">Добавить</a></li>
 				<li class="col-md-3"><a href="#">По имени</a></li>
 				<li class="col-md-3"><a href="#">По дате</a></li>
 				<li class="col-md-3"><a href="#" class="last">По очкам</a></li>
@@ -85,7 +85,7 @@
 	</a>
 <div class="popUp">
 	<form class="formPlaer">
-		<button id="exitForm" onclick="popupclose()"></button>
+		<button id="exitForm"></button>
 		<div class="infoPlaer">
 			<div class="namePlaer">
 				<div class="namePlaerFlex">
@@ -105,7 +105,7 @@
         		<option>Легионер</option>
         		<option>Хранитель</option>
     		</select>
-			<button onclick="popupclose()">Добавить</button>
+			<button id="add_plaer_button">Добавить</button>
 		</div>
 		<div class="avatarPlaer">
 			<p>Аватар игрока</p>

@@ -1,9 +1,22 @@
-function popup(){
+var add_plaer = document.getElementById("add_plaer");
+var add_plaer_button = document.getElementById("add_plaer_button");
+var exitForm = document.getElementById("exitForm");
+
+add_plaer.addEventListener("click", popup);
+exitForm.addEventListener("click", popupСlose);
+add_plaer_button.addEventListener("click", popupAddPlaer);
+
+function popup(event){
 		var popUp =  document.querySelector(".popUp");
 		popUp.style.cssText = "display: flex;";
 	};
 
-function popupclose(){
+function popupСlose(event){
+		var popUp =  document.querySelector(".popUp");
+		popUp.style.cssText = "display: none;";
+	};
+
+function popupAddPlaer(event){
 		var popUp =  document.querySelector(".popUp");
 		popUp.style.display = "none";
         
