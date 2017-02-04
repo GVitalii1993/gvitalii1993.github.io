@@ -1,0 +1,36 @@
+//forms, buttons, dialogs etc.
+.nav-bar{
+	&:extend(.ul-unstyled);
+	
+	li {
+		display: inline-block;
+		margin-left: 15px;
+		a {
+			.transition();
+			display: inline-block;
+			border: 2px solid transparent;
+			color: #fff;
+			font-family: 'SegoeUIBold';
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 10px 17px;
+			line-height: 1;
+			&:focus{
+				color:@accent;
+				text-decoration: none;
+				border-color: @accent;
+			}
+			&:hover{
+				text-decoration: none;
+				color: @accent;
+			}
+			&.active{
+				border-color: @accent;
+				collor: @accent;
+			}
+		}
+	}
+	&.black-font a{
+		color: @font;
+	}
+}
