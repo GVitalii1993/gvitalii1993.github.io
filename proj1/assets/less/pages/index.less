@@ -65,20 +65,72 @@
 
 .stn-portfolio{
 	&:extend(.stn-padding);
+	
 	.nav-bar{
 		float: right;
 	}
 	.stn-heading{
 		margin-bottom: 80px;
+		margin-left: -15px;
 	}
 }
 .thumds-row{
+	min-height: 270px + 270px + 30px;
 	[class^="col-"]{
 		margin-bottom: 30px;
 	}
 	a{
 		display: block;
 		height: 270px;
-		background-color: pink;
+		background-color: #979797;
+		position: relative;
+		opacity: .8;
+		color: #fff;
+		font-size: 72px;
+		text-align: center;
+		font-family: 'SegoeUILight';
+		
+		&:after{
+			position: absolute;
+			content: '+';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #495259;
+			background-color: fade(#495259, 80%);
+			line-height: 1;
+			opacity: 0;
+			transition:all 0.3s ease-in-out;
+		}
+
+		&:hover:after{
+			opacity: 1;
+			line-height: 270/72;
+		}
 	}
+}
+.img1{
+	.bg-img('img1.jpg')
+}
+.img2{
+	.bg-img('img2.jpg')
+}
+.img3{
+	.bg-img('img3.jpg')
+}
+.img4{
+	.bg-img('img4.jpg')
+}
+.img5{
+	.bg-img('img5.jpg')
+}
+.img6{
+	.bg-img('img6.jpg')
+}
+.img7{
+	.bg-img('img7.jpg')
+}
+.img8{
+	.bg-img('img8.jpg')
 }
