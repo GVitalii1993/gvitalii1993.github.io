@@ -1775,7 +1775,9 @@ select[multiple].input-lg {
 }
 .stn-padding,
 .stn-services,
-.stn-portfolio {
+.stn-portfolio,
+.stn-video,
+.stn-twitter {
   padding: 80px 0;
 }
 /* font-family: "SegoeUIRegular"; */
@@ -1905,10 +1907,42 @@ select[multiple].input-lg {
 .nav-bar.black-font a {
   color: #515f67;
 }
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-ghost-grey {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'SegoeUIBold';
+  color: #353f46;
+  border: 2px solid #353f46;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+  padding: 1.07em 2.857em;
+  font-size: 1em;
+}
+.btn-ghost-grey:hover {
+  text-decoration: none;
+  color: #4bcaff;
+  border-color: #4bcaff;
+}
 body {
-  font-family: 'Segoe', Arial, sans-sherif;
-  font-size: 14px;
-  line-height: 1.71428571;
+  font: 14px/1.71428571 'segoe', Arial, sans-sherif;
+}
+p {
+  margin-bottom: 1.785em;
+  margin-top: 0px;
 }
 .site-header {
   background-image: url('../img/img-head.jpg');
@@ -1950,6 +1984,7 @@ body {
   line-height: 1;
 }
 .stn-heading:after {
+  display: table;
   content: '';
   width: 45px;
   height: 2px;
@@ -1981,15 +2016,14 @@ body {
 }
 .stn-portfolio .stn-heading {
   margin-bottom: 80px;
-  margin-left: -15px;
 }
-.thumds-row {
+.thumbs-row {
   min-height: 570px;
 }
-.thumds-row [class^="col-"] {
+.thumbs-row [class^="col-"] {
   margin-bottom: 30px;
 }
-.thumds-row a {
+.thumbs-row a {
   display: block;
   height: 270px;
   background-color: #979797;
@@ -2000,7 +2034,7 @@ body {
   text-align: center;
   font-family: 'SegoeUILight';
 }
-.thumds-row a:after {
+.thumbs-row a:after {
   position: absolute;
   content: '+';
   top: 0;
@@ -2013,7 +2047,7 @@ body {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.thumds-row a:hover:after {
+.thumbs-row a:hover:after {
   opacity: 1;
   line-height: 3.75;
 }
@@ -2072,4 +2106,31 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+}
+.stn-video {
+  background-color: #515f67;
+  color: #fff;
+}
+.stn-video-col {
+  margin-top: -81px;
+}
+@media (max-width: 992px) {
+  .stn-video-col {
+    margin-top: 0;
+  }
+}
+.stn-twitter {
+  background-color: #4bcaff;
+  color: #fff;
+}
+.stn-twitter p {
+  font-size: 2em;
+  font-family: 'SegoeUILight';
+}
+.stn-twitter strong {
+  font-size: 'SegoeUISemiBold';
+}
+.stn-twiter-icon {
+  font-size: 24px;
+  float: right;
 }
