@@ -77,7 +77,6 @@
 	}
 }
 .thumbs-row{
-	min-height: 270px + 270px + 30px;
 	[class^="col-"]{
 		margin-bottom: 30px;
 	}
@@ -168,4 +167,61 @@
 .stn-twiter-icon {
 	font-size: 24px;
 	float: right;
+}
+
+.stn-about {
+	&:extend(.stn-padding);
+	.bg-img('mean.jpg');
+	color: #fff;
+}
+.social-links {
+	&:extend(.ul-unstyled);
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display: table;
+		color: #fff;
+		width: 65px;
+		height: 65px;
+		font-size: 30px;
+		text-align: center;
+		border: 2px solid #fff;
+		max-resolution: 20px;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			border-color: @accent;
+			color: @accent;
+			text-decoration: none;
+		}
+
+	}
+		i {
+			display: table-cell;
+			vertical-align: middle;
+		}
+}
+
+.stn-testimonials {
+	&:extend(.stn-padding);
+
+	.stn-heading .icon-quote {
+		font-size: 30px;
+		float: right;
+	}
+}
+.stn-quote {
+	margin: 0;
+	font-size: 2em;
+	font-family: 'SegoeUILight';
+
+	cite {
+		display: block;
+		color: @accent;
+		font-size: .5em;
+		font-family: 'SegoeUIBold';
+		margin-top: 30px;
+	}
 }
