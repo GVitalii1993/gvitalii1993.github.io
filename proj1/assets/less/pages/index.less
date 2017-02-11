@@ -145,7 +145,7 @@
 .stn-video-col{
 	margin-top: -81px;
 	@media (max-width:992px){
-		margin-top: 0;
+		margin-top: 30px;
 	}
 }
 
@@ -189,11 +189,11 @@
 		text-align: center;
 		border: 2px solid #fff;
 		max-resolution: 20px;
+		text-decoration: none;
 		transition: all 0.3s ease-in-out;
 		&:hover {
 			border-color: @accent;
 			color: @accent;
-			text-decoration: none;
 		}
 
 	}
@@ -222,5 +222,62 @@
 		font-size: .5em;
 		font-family: 'SegoeUIBold';
 		margin-top: 30px;
+	}
+}
+
+.site-footer {
+	&:extend(.stn-padding);
+	background-color: #353f47;
+	color: #515f67;
+	font-size: 0.857em;
+	font-family: 'SegoeUIBold';
+	font-weight: 600;
+}
+.footer-nav {
+	&:extend(.ul-unstyled);
+	float: left;
+	text-transform: uppercase;
+
+	li {
+		display: inline-block;
+		&:before {
+			content: '|';
+		}
+
+		&:first-child {
+			&:before {
+				content: '';
+			}
+			a {
+				padding-left: 0;
+			}
+		}
+	}
+	a {
+		color: inherit;
+		display: inline-block;
+		padding: 0 10px;
+		text-decoration: none;
+	&:hover{
+		color: @accent;
+	}
+	}
+}
+.copyright{
+	float: right;
+	margin: 0;
+}
+
+.stn-contact {
+	&:extend(.stn-padding);
+	.bg-img('cofee.jpg');
+	color: #fff;
+}
+
+.frm-text-col {
+	margin-top: 19px;
+
+	@media (max-width:768px) {
+		margin-top: 0;
 	}
 }
