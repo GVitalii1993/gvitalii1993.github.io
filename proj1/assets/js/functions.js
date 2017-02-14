@@ -3,6 +3,7 @@
 
   $(document).ready(function () {
     
+    
     function blueasyTabs() {
       var $wrapper = $('.tab-wrapper'),
           $menu = $wrapper.find('.tab-menu li'),
@@ -44,8 +45,12 @@
         }
       });
     }
+
     blueasyMenu();
 
+    $(".ninja-btn").click( function() {
+    $(this).toggleClass("active");
+    });
   }); //end ready
 
 }(jQuery));

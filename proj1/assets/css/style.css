@@ -1159,7 +1159,7 @@ hr {
 }
 .nav-bar li a.active {
   border-color: #4bcaff;
-  collor: #4bcaff;
+  color: #4bcaff;
 }
 .nav-bar.black-font a {
   color: #515f67;
@@ -1243,8 +1243,8 @@ p {
   background-attachment: scroll;
   -ms-behavior: url(/assets/ie8-support/backgroundsize.min.htc);
 }
-.site-header img {
-  margin-top: 7.5px;
+.main-logo {
+  float: left;
 }
 .site-nav {
   background: #48525a;
@@ -1263,6 +1263,7 @@ p {
   text-align: center;
 }
 .tex-heder span {
+  background-color: #48525a;
   background-color: rgba(72, 82, 90, 0.85);
   padding: 0px 20px;
 }
@@ -1322,7 +1323,12 @@ p {
   text-align: center;
   font-family: 'SegoeUILight';
 }
+.thumbs-row a:hover {
+  text-decoration: none;
+}
 .thumbs-row a:after {
+  display: block;
+  text-align: center;
   position: absolute;
   content: '+';
   top: 0;
@@ -1519,5 +1525,98 @@ p {
 @media (max-width: 768px) {
   .frm-text-col {
     margin-top: 0;
+  }
+}
+@media (max-width: 992px) {
+  /* Element Variables
+   Change @bar-w to adjust entire button size.
+*/
+  /* Ninja Button styles */
+  .ninja-btn {
+    display: inline-block;
+    float: right;
+    position: relative;
+    line-height: 1;
+    width: 40px;
+    height: 29.66666667px;
+    cursor: pointer;
+    padding: 0;
+  }
+  .ninja-btn span,
+  .ninja-btn span:before,
+  .ninja-btn span:after {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 3px;
+  }
+  .ninja-btn span {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 13.33333333px;
+  }
+  .ninja-btn span:before,
+  .ninja-btn span:after {
+    content: "";
+    position: absolute;
+    right: 0;
+  }
+  .ninja-btn span:before {
+    top: -13.33333333px;
+  }
+  .ninja-btn span:after {
+    top: 13.33333333px;
+  }
+  /* Ninja Button */
+  .ninja-btn.active span {
+    background-color: transparent;
+  }
+  .ninja-btn.active span:before,
+  .ninja-btn.active span:after {
+    top: 0;
+  }
+  .ninja-btn.active span:before {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+  }
+  .ninja-btn.active span:after {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+  }
+  .site-nav {
+    position: relative;
+  }
+  .site-nav .nav-bar {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #48525a;
+    display: none;
+  }
+  .site-nav .nav-bar li {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    border-bottom: 1px solid #535f68;
+  }
+  .site-nav .nav-bar a {
+    display: inline-block;
+    padding: 20px 30px;
+  }
+  .site-nav .nav-bar a.active {
+    border-color: transparent;
   }
 }
