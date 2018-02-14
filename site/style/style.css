@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+}
+.nav-bar{
+	position: fixed;
+	background: #31323a;
+	height: 100%;
+	width: 20%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	-webkit-transition: left 0.5s;
+     -moz-transition: left 0.5s;
+     -o-transition: left 0.5s;
+     transition: left 0.5s;
+}
+.nav-button {
+	position: absolute;
+	top: 50%;
+	right: -25px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-top: -25px;
+	cursor: pointer;
+	background: url(../img/icon/icons8-filled-50.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 25% center;
+	transform: scale(1, -1);
+	background-color: #21c7af;
+	z-index: 1000!important;
+	transition: all 2s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+.bloc{
+	height: 100%;
+	background: #ded33d;
+}
+.content{
+	background: #b3bece;
+	background-repeat: repeat-y;
+	background-position: center center;
+	background-size: 100% auto;
+	height: 2500px;
+	width: 100%;
+	z-index: 1;
+	
+}
+.dir {
+	height: 1500px;
+}
