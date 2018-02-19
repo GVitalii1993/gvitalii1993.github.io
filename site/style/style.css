@@ -18,7 +18,7 @@ p {
 	line-height: 1.5em;
 }
 
-.nav-bar{
+.nav-bar {
 	position: fixed;
 	background: #31323a;
 	height: 100%;
@@ -53,30 +53,57 @@ p {
     -o-transition: all 0.5s ease-out;
 }
 
-.nav-registration{
-	height: 100%;
+.nav_bar_user_profile {
+	width: 100%;
+	height: 40%;
+	margin: 0 auto;
+	padding-top: 20%;
 }
 
-.nav-registration-form{
+.nav_bar_user_profile_avatar {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+.nav_bar_user_profile_avatar img {
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;	
+	border-radius: 50%;
 }
 
-.nav-registration-form p{
+.nav_bar_user_profile_name {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+}
+
+.nav-login_users {
+	width: 100%;
+	height: 60%;
+	margin-left: 0px!important;	
+}
+
+.nav-login_users p {
 	height: 50px;
 }
 
-.nav-registration form input {
+.nav-login_users_form {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form_input form input {
 	height: 50px;
 	width: 100%;
 	outline:none;
 }
 
-.nav-registration form input[type="text"], input[type="password"], input[type="email"] {
+.form_input form input[type="text"], input[type="password"], input[type="email"] {
 	background-color: #3b4148;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -84,11 +111,11 @@ p {
 	color: #606468;
 }
 
-.nav-registration form input:focus {
+.form_input form input:focus {
 	color:#fff;
 }
 
-.nav-registration form input[type="submit"] {
+.form_input form input[type="submit"] {
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -99,11 +126,11 @@ p {
 	cursor:pointer;
 }
 
-.nav-registration form input[type="submit"]:hover {
+.form_input form input[type="submit"]:hover {
 	background-color: #d44179;
 }
 
-.nav-registration > p {
+.nav-login_users > p {
 	text-align: center;
 }
 
