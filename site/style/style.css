@@ -1,6 +1,23 @@
 body {
 	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 1em;
 }
+
+input {
+	border: none;
+	padding: 0;
+	padding: 0 10px 0 10px;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	-webkit-appearance: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+
 .nav-bar{
 	position: fixed;
 	background: #31323a;
@@ -28,17 +45,68 @@ body {
 	background-repeat: no-repeat;
 	background-position: 25% center;
 	transform: scale(1, -1);
-	background-color: #21c7af;
+	background-color: #ea4c88;
 	z-index: 1000!important;
 	transition: all 2s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; /** Chrome & Safari **/
+    -moz-transition: all 0.5s ease-out; /** Firefox **/
     -o-transition: all 0.5s ease-out;
 }
-.bloc{
+
+.nav-registration{
 	height: 100%;
-	background: #ded33d;
 }
+
+.nav-registration-form{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.nav-registration-form p{
+	height: 50px;
+}
+
+.nav-registration form input {
+	height: 50px;
+	width: 100%;
+	outline:none;
+}
+
+.nav-registration form input[type="text"], input[type="password"], input[type="email"] {
+	background-color: #3b4148;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #606468;
+}
+
+.nav-registration form input:focus {
+	color:#fff;
+}
+
+.nav-registration form input[type="submit"] {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #ea4c88;
+	color: #eee;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+
+.nav-registration form input[type="submit"]:hover {
+	background-color: #d44179;
+}
+
+.nav-registration > p {
+	text-align: center;
+}
+
 .content{
 	background: #b3bece;
 	background-repeat: repeat-y;
@@ -51,4 +119,16 @@ body {
 }
 .dir {
 	height: 1500px;
+}
+
+.flex{
+	background: #03a9f4;
+	width: 200px;
+	height: 200px;
+}
+
+.dir {
+	display: flex;
+	align-items: center;
+
 }
