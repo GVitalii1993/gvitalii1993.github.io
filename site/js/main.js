@@ -10,4 +10,16 @@
     				$(".nav_button").css("transform","scale(1, -1)");
     			}  
 			});
+
+            $('#nav_registration_user').click( function(event){
+                event.preventDefault();
+                $.ajax({
+                url: '../html/registration_user.html',
+                success: function(data) {
+                    $('.content').html(data);
+                    console.log(data);
+
+                    }
+                });
+            });
 		});

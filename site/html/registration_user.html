@@ -1,0 +1,13 @@
+<div class="popup_registration_user">
+	<form action="signup.php" method="POST">
+ 		<div class="login">Login</div>
+ 			<input type="text" name="login" value="<?php echo @$data['login']; ?>">
+ 		<div class="pass">Pass</div>
+ 			<input type="password" name="password">
+ 		<div class="pass">Pass2</div>
+ 			<input type="password" name="password2">
+  		<div class="email">Mail</div>
+ 			<input type="email" name="email" value="<?php echo @$data['email']; ?>">
+ 		<p><button type="submit" name="do_signup">зарегистрироваться</button></p>
+ 	</form>
+</div>
