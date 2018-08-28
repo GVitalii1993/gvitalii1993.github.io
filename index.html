@@ -4,71 +4,72 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Portfolio</title>
-	<link rel="stylesheet" href="menu/css/main.css" />
-	<link rel="shortcut icon" href="menu/img/internet.png">
-	<link rel="stylesheet" href="1/css/normalize.css">
-	<link rel="stylesheet" href="menu/css/media.css">
+	<link rel="shortcut icon" href="menu/img/ava3.png">
+	<link rel="stylesheet" href="menu/css/bootstrap.min.css">
 	<link rel="stylesheet" href="2/font/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="menu/css/main.css" />
 </head>
 <body>
-<div id="page-preloader"><span class="spinner"></span></div>
+	<div class="color-theme color-theme-light-img"></div>
 <!-- _________________________________Audio___________________________________________ -->
 	<audio id="player" src="menu/muz/tobu-colors_fmusic_mobi.mp3"></audio>
-<div class="play-er">
-	<button class="player play" onclick="document.getElementById('player').play()"><i class="fa fa-play" aria-hidden="true"></i></button>
-	<button class="player pause" onclick="document.getElementById('player').pause()"><i class="fa fa-pause" aria-hidden="true"></i></button>
+<div class="player">
+	<button class="player-play player-button" onclick="document.getElementById('player').play()"></button>
+	<button class="player-pause player-button" onclick="document.getElementById('player').pause()"></button>
 <!-- _________________________________/Audio___________________________________________ -->
 </div>
-<!-- _________________________________background video___________________________________________ -->
-<div id="video-bg">
-    <video preload="auto" autoplay="autoplay"
-    loop="loop" poster="menu/img/fon.jpg">
-        <source src="menu/bgvideo/Background-LoopHD.mp4">
-    </video>
-</div>
-<!-- ________________________________/background video___________________________________________ -->
-	<main>
-		<div class="navbar">
+<div class="container">
+	<main class="row">
+		<div class="avatar">
+			<img src="menu/img/ava3.png" alt="avatar" class="img-responsive">
+		</div>
+		<div class="my-name">Haievyi Vitalii</div>
+		<div class="col-sm-3"></div>
+		<div class="social col-sm-6">
+			<ul>
+				<li class="skype"><a href="skype:boomm19"></a></li>
+				<li class="viber"><a href="viber://chat?number=+380972861364"></a></li>
+				<li class="whatsapp"><a href="https://wa.me/380972861364" target="_blank"></a></li>
+				<li class="telegram"><a href="https://telegram.me/Boomka19" target="_blank"></a></li>
+				<li class="instagram"><a href="https://www.instagram.com/boommka/" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="col-sm-3"></div>
+		<div class="clearfix"></div>
+		<div class="navbar row">
 			<h2>My Works</h2>
-			<nav>
-				<ul class="col_1">
-					<li><a href="1/index.html">Site &#8544;</a></li>
-					<li><a href="2/index.html">Site &#8545;</a></li>
-					<li><a href="Сhaos-Сhronicles/index.html">Сhaos Сhronicles</a></li>
-					<li><a href="inputImg/input.html">My practice</a></li>
-					<li><a href="proj1/index.html">(Bootstrap,Jade,Less) practice</a></li>
+			<div class="nav">
+				<ul class="col-sm-4 col-md-3 col-xs-6">
+					<li class="nav-li-light"><a href="2/index.html">My first page</a></li>
+					<li class="nav-li-light"><a href="1/index.html">Page &#8545;</a></li>
+					<li class="nav-li-light"><a href="proj1/index.html">Page &#8546;</a></li>
 				</ul>
-				<ul class="col_2">
-					<li><a href="site/index.html">Galery</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="muzvideo/index.html">Music 3D</a></li>
+				<ul class="col-sm-4 col-md-3 col-xs-6">
+					<li class="nav-li-light"><a href="proj/index.html">Page &#8547;</a></li>
+					<li class="nav-li-light"><a href="site/index.html">Galery</a></li>
+					<li class="nav-li-light"><a href="Сhaos-Сhronicles/index.html">Сhaos Сhronicles</a></li>		
 				</ul>
-				<ul class="col_3">
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-					<li><a href="#">Lorem ipsum.</a></li>
-				</ul>
-			</nav>
-		</div>	
-		<div class="contact_us">
-			<h2>Contact Us</h2>
-			<form class="contact">
-				<input type="text"	name="name" class="name" placeholder="Name:" required="required"/>
-				<input type="text"	name="Subject" class="email" placeholder="Subject" required="required"/>
-				<textarea name="message" class="message" placeholder="Message"></textarea>
-				<button name="submit"><i class="fa fa-check" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="contact_us row">
+			<h2>Contact With Me</h2>
+			<form class="contact col-sm-8 col-md-6 col-xs-8">
+				<input type="text"	name="name" class="name" placeholder="Name :" required="required"/>
+				<div class="clearfix"></div>
+				<input type="text"	name="Subject" class="email" placeholder="Subject :" required="required"/>
+				<div class="clearfix"></div>
+				<textarea name="message" class="message" placeholder="Message :"></textarea>
+				<button name="submit" class="button-submit col-sm-4 col-xs-4">Submit</button>
 			</form>
 		</div>
 	</main>
-	<footer>
-		<p>2016&#169; gvitalii1993.github.io</p>
+	<footer class="row">
+		<p>2018&#169; gvitalii1993.github.io</p>
 	</footer>
-	<script src="1/js/jquery-3.0.0.min.js"></script>
-	<script src="1/js/jquery-migrate-3.0.0.min.js"></script>
+</div>
+	<script src="proj/js/jquery-3.3.1.js"></script>
 	<script src="menu/js/js.js"></script>
 </body>
 </html>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
