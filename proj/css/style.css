@@ -1,61 +1,589 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@font-face {
+ font-family: "runic_altno";
+ src: url(../fonts/runic_altno.ttf);
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+@font-face {
+ font-family: "OpenSans-Light";
+ src: url(../fonts/OpenSans-Light.ttf);
 }
-body {
-	line-height: 1;
+@font-face {
+ font-family: "OpenSans-ExtraBold";
+ src: url(../fonts/OpenSans-ExtraBold.ttf);
 }
+@font-face {
+ font-family: "OpenSans-Regular";
+ src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+ font-family: "OpenSans-Bold";
+ src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+ font-family: "OpenSans-SemiBold";
+ src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+.clear {
+	clear: both;
+}
+
 ol, ul {
 	list-style: none;
+	padding: 0;
+ 	margin: 0;
 }
-blockquote, q {
-	quotes: none;
+
+a {
+	text-decoration: none!important;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+a:hover {
+	text-decoration: none!important;
 }
 
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	background: #f1f1f1;
 }
 
-header {
+.header {
 	text-align: center;
+	height: 560px;
 }
 
-header h2 {
-	padding: 15px 0 60px 0;
+.header-handmade {
+	margin: 15px;
+	font-family: 'OpenSans-Light';
+	font-size: 14px;
+	color: #212121;
+	opacity: 0.4;
 }
 
-.header-nav {
+.header-menu {
+	margin-top: 60px;
+}
+
+.header-menu-block {
 	height: 60px;
+	border-style: solid;
+    border-width: 2px 0 2px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-menu-block a {
+	height: 100%;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "runic_altno";
+	font-size: 48px;
+	color: #212121;
+	transition-duration: 0.2s;
+}
+
+.header-menu-block a:hover {
+	color: #3cd7e8;
+}
+
+.header-menu-centr {
+	height: 165px;
+	position: relative!important;
+	bottom: 46px;
+	z-index: 5;
+}
+
+.header-shop-menu {
+	display: flex;
+	align-items: center;
+	height: 30px;
+    left: 33.3%;
+    top: -90px;
+	position: relative!important;
+}
+
+.header-shop-menu a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 30px;
+}
+
+/*-----------------------------shop-basket-----------------------------*/
+
+.overlay-popup {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.5;
+}
+
+.shop-basket {
+	position: relative;
+	float: right!important;
+	padding: 0!important;
+	padding-right: 15px!important;
+	border-bottom: 2px solid #212121;
+	top: -165px;
+	left: 2px;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	background: #fff;
+	z-index: 9999;
+}
+
+.shop-basket-buy li {
+	height: 100px;
+	padding: 15px 0 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-times {
+	font-size: 24px!important;
+	font-family: 'OpenSans-Light';
+	color: #dbdbdb;
+}
+
+.shop-basket-buy li img {
+	width: 92px;
+	height: 82px;
+	margin: 0 10px 0 10px;
+}
+
+.description-basket  {
+	text-align: left;
+}
+
+.description-basket h4{
+	margin: 0;
+	font-family: "OpenSans-Bold";
+}
+
+.description-basket p {
+	margin: 0;
+	font-family: "OpenSans-Regular";
+}
+
+.quantity-shop-basket {
+	width: 130px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+}
+
+.count-product-shop-basket {
+	width: 20px;
+	margin: 0 10px 0 10px;
+	border: none;
+	background: #fff;
+}
+
+.quantity-shop-basket a {
+	color: #000;
+}
+
+.shop-basket-total {
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+	padding-top: 15px;
+	padding-bottom: 55px;
+	border-top: 2px solid #d5d5d5;
+	font-family: "OpenSans-Regular";
+	font-weight: 600;
+}
+
+.shop-basket-total-price {
+	display: flex;
+	padding-left: 50px;
+	color: #a52d2f;
+	font-family: "OpenSans-Bold";
+}
+
+.basket-total-price {
+	margin-left: 5px;
+}
+
+/*-----------------------------slide-----------------------------*/
+.slide-content {
+	position: absolute;
+    top: 80px;
+    right: 125px;
+    color: #fff;
+}
+
+.slide-content h1{
+	font-size: 72px;
+	margin: 0px;
+	font-family: "OpenSans-ExtraBold";
+}
+
+.slide-content h2{
+	font-size: 31px;
+	margin-top: 0px;
+	font-family: "OpenSans-Light";
+	font-weight: 400;
+}
+
+.style-button {
+	width: 120px;
+	height: 40px;
+	border: 0px;
+	border-radius: 3px;
+	background: #68ac71;
+	color: #fff;
+	font-family: "OpenSans-Regular";
+	outline: none;
+}
+
+.header-slider li {
+	position: relative;
+}
+
+.header-slider {
+	position: absolute;
+    top: 180px;
+	height: 382px;
+	overflow: hidden;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.5)
+}
+
+.header-slider .nav {
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: 15px;
+	top: 0; 
+}
+
+.header-slider .nav span {
+ 	opacity: 0.9;
+ 	margin: 0 0 8px 0;
+ 	width: 15px;
+ 	height: 15px;
+ 	border: solid 2px #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+ 	float: left;
+}
+
+.header-slider .nav span.on {
+ 	background: #000;
+}
+
+/*----------------------------------BESTSELLERS--------------------------------*/
+
+.title-block {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	margin-top: 30px;
+}
+
+.title-block img {
+	float: left;
+	margin-right: 5px;
+}
+
+.title-block h2 {
+	padding-left: 5px;
+	text-transform: uppercase;
+	font-family: "OpenSans-Bold";
+	font-size: 24px;
+}
+
+.bestsellers-menu {
+	height: 25px;
+}
+
+.bestsellers-menu ul li {
+	display: inline-block;
+	padding: 5px;
+	font-size: 16px;
+	font-family: "OpenSans-Light";
+	font-weight: 600;
+}
+
+.bestsellers-menu ul li a {
+	color: #212121;
+}
+
+.bestsellers-menu ul li a:hover {
+	border-bottom: 1.5px solid #000;
+}
+
+.bestsellers-more {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 25px;
+}
+
+.bestsellers-search {
+	font-size: 20px!important;
+}
+
+.bestsellers-more a {
+	padding: 0 10px 0 10px;
+	font-size: 30px;
+	color: #212121;
+	transition-duration: 0.2s;
+}
+
+.bestsellers-more a:hover {
+	color: #3cd7e8;
+}
+
+.bestsellers-more p {
+	font-size: 14px;
+	font-family: "OpenSans-Light";
+	font-weight: 600;
+}
+
+.products {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.product-card {
+	height: 300px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+	border-bottom: 1px solid #212121;
+}
+
+.product-card p {
+	padding-top: 5px;
+	margin: 0;
+}
+
+.product-description {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.product-name {
+	font-family: "OpenSans-SemiBold";
+}
+
+.course-price {
+	font-family: "OpenSans-Bold";
+}
+
+.price {
+	font-family: "OpenSans-Bold";
+}
+
+.product-price {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+}
+
+.block-discount {
+	font-family: "OpenSans-Regular";
+}
+
+.old-price {
+	text-decoration: line-through;
+	color: #68ac71;
+}
+
+.discount {
+	padding: 0 3px 0 3px;
+	background: #68ac71;
+	color: #fff;
+}
+
+.product-line-one {
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+.product-line-two {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.shipping {
+	margin-bottom: 10px;
+	font-family: "OpenSans-Regular";
+	color: #acacac;
+}
+
+
+/*<!-- =============== Fresh updates ================== -->*/
+
+
+.fresh-update-slider {
+	margin-top: 10px;
+}
+
+.wrap-fresh-update-slider {
+	height: 310px;
+	overflow: hidden;
+}
+
+/*.fresh-update-slider .nav {
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: 15px;
+	top: 0; 
+}
+
+.fresh-update-slider .nav span {
+ 	opacity: 0.9;
+ 	margin: 0 0 8px 0;
+ 	width: 15px;
+ 	height: 15px;
+ 	border: solid 2px #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+ 	float: left;
+}
+
+.fresh-update-slider .nav span.on {
+ 	background: #000;
+}*/
+
+.button-updates {
+	display: block;
+	margin: 20px auto;
+}
+
+.description-product {
+	font-family: "OpenSans-Regular";
+	margin-bottom: 85px;
+}
+
+/*-----------------------------FOOTER-----------------------------------*/
+
+.footer {
+	height: 285px;
+	border-top: solid 2px #000;
+	background: #dbdbdb;
+	background-image: url("../img/footer-background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.img-footer-background {
+	position: absolute;
+	left: 145px;
+	overflow: hidden;	
+}
+
+.footer-img {
+	position: relative;
+}
+
+.footer-centr-img {
+	margin-top: 18px;
+}
+
+.footer-left{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-customer-service {
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+}
+
+.footer-customer-service ul li {
+	margin-top: 10px;
+}
+
+.footer h3 {
+	font-family: "OpenSans-Bold";
+}
+
+.footer a{
+	font-family: "OpenSans-Regular";
+	font-weight: 600;
+	color: #212121;
+	transition-duration: 0.2s;
+}
+
+.footer-left a:hover {
+	color: #3cd7e8;
+}
+
+.footer-items {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.footer-items ul li {
+	margin-top: 10px;
+}
+
+.footer-img-circle {
+	position: relative;
+	margin-top: -100px!important;
+}
+
+.footer-right {
+	display: flex;
+	justify-content: center;
+}
+
+.footer form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.footer form h3 {
+	padding: 0;
+}
+
+.footer form input{
+	height: 30px;
+	margin-top: 5px;
+	background: none;
+	border: 0;
+	border-bottom: 2px solid #000;
+	font-family: "OpenSans-Light";
+	font-weight: 600;
+	padding: 0;
+	outline: none;
+}
+
+.footer-form-submit {
+	width: 125px;
+	height: 40px;
+	margin-top: 50px;
+	font-family: "OpenSans-Regular";
+	background: #3e3e3e;
+	color: #fff;
+	border: 0;
+	border-radius: 3px;
+	transition-duration: 0.2s;
+}
+
+.footer-form-submit:hover {
+	background: #68ac71;
 }
